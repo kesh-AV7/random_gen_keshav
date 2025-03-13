@@ -1,7 +1,3 @@
-# Random Alpha Generation
-
-This section details how random alpha strategies are generated using a genetic programming approach. Each alpha is represented as a tree structure that combines terminal values and functions (unary, binary, or ternary) to form a trading signal.
-
 ## Key Hyperparameters
 
 - **MAX_INIT_TREE_DEPTH & MAX_ALLOWED_DEPTH:**  
