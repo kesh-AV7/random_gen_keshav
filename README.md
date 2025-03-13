@@ -4,7 +4,7 @@
   These parameters define the maximum depth of the initial tree and the overall allowed tree depth. They control the complexity of the generated expressions.
 
 - **POPULATION_SIZE:**  
-  The total number of alpha strategies (trees) to generate. For example, `POPULATION_SIZE = 100000` creates one hundred thousand random alphas.
+  The total number of models to generate. For example, `POPULATION_SIZE = 100000` creates one hundred thousand random alphas.
 
 - **MAX_NODES:**  
   A threshold used for bloat control. Trees that exceed this node count are pruned to keep the models simple and prevent overfitting.
@@ -15,7 +15,7 @@
 
 #### Structure:
 - The `GPNode` class represents nodes in the expression tree.
-- Nodes can be **terminals** (leaf nodes holding a value) or **functions** (nodes that apply unary, binary, or ternary operations to combine or transform their children).
+- Nodes can be **terminals** (leaf nodes holding a value) or **transformers** (nodes that apply unary, binary, or ternary operations to combine or transform their children).
 
 #### Methods:
 - **to_expression():** Converts the tree into a mathematical expression.
